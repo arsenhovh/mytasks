@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-15T09:32:04.668Z",
+    "end": "2021-10-15T09:32:04.674Z",
+    "duration": 6,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "97eb197e-112a-4cd3-8921-b098a653bdab",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4e4f520-142d-4eac-85dc-92985c838b4e",
+          "title": "add is correct ",
+          "fullFile": "C:\\Users\\Arsen_Hovhannisyan\\Desktop\\jsAutomationMentoringProgram\\test\\specs\\calcu.spec.js",
+          "file": "\\test\\specs\\calcu.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"add is correct \"",
+              "fullTitle": "add is correct  \"before each\" hook in \"add is correct \"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calc = new Calculator();",
+              "err": {},
+              "uuid": "7ad06d94-e415-41d0-aec6-a6e12234cdca",
+              "parentUUID": "f4e4f520-142d-4eac-85dc-92985c838b4e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"add is correct \"",
+              "fullTitle": "add is correct  \"after each\" hook in \"add is correct \"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calc = null ;",
+              "err": {},
+              "uuid": "fe6d8470-292c-45f2-9394-6e0e4200f9d8",
+              "parentUUID": "f4e4f520-142d-4eac-85dc-92985c838b4e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return number 5",
+              "fullTitle": "add is correct  should return number 5",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calc.add(2,3)).to.be.equal(5);",
+              "err": {},
+              "uuid": "444164ac-4468-467f-afdc-b59e9ce451e3",
+              "parentUUID": "f4e4f520-142d-4eac-85dc-92985c838b4e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return number 6",
+              "fullTitle": "add is correct  should return number 6",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calc.multiply(2,3)).to.be.equal(6);",
+              "err": {},
+              "uuid": "a178818e-5b54-4c69-91b9-963818472233",
+              "parentUUID": "f4e4f520-142d-4eac-85dc-92985c838b4e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return number -1",
+              "fullTitle": "add is correct  should return number -1",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(calc.add(-5,null)).to.be.equal(5);",
+              "err": {
+                "message": "Error: num1 or num2 is not a number",
+                "estack": "Error: num1 or num2 is not a number\n    at Calculator.add (app\\calculator.js:6:23)\n    at Context.<anonymous> (test\\specs\\calcu.spec.js:19:21)\n    at processImmediate (internal/timers.js:464:21)",
+                "diff": null
+              },
+              "uuid": "a516a2b1-1b32-48e0-9525-c657137ecdfc",
+              "parentUUID": "f4e4f520-142d-4eac-85dc-92985c838b4e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "444164ac-4468-467f-afdc-b59e9ce451e3",
+            "a178818e-5b54-4c69-91b9-963818472233"
+          ],
+          "failures": [
+            "a516a2b1-1b32-48e0-9525-c657137ecdfc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
