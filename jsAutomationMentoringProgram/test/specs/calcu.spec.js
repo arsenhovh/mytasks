@@ -3,7 +3,7 @@ const {expect} = require("chai");
 const chai = require('chai')
 const should = chai.should();
 
-describe("add is correct ", function (){
+describe("add is correct and", function (){
     let calc ;
     beforeEach(function (){
         calc = new Calculator();
