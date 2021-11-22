@@ -1,0 +1,20 @@
+
+test A. Should open url and verify the title
+        1 Open browser and navigate to https://www.amazon.com/
+        2 Check the title of https://www.amazon.com/               | ("Amazon.com. Spend less. Smile more.")
+
+test B. Find laptop in Amazon.com
+        1 Open browser and navigate to https://www.amazon.com/
+        2 Write "Laptop" in search input and click search button   | Should open search page and under it all found laptops  
+ 
+test C. Add some product in bag and Check count
+        1 Open browser and navigate to https://www.amazon.com/
+        2 Write "Laptop" in search input and click search button   | 
+        3 Click the first product of found result                  |  
+        4 Add to Cart seleced laptop  and check bag count          | Bug count must be 1 
+
+test D. Change language and Check  translations     
+        1 Open browser and navigate to https://www.amazon.com/ 
+        2 Move mouse to US flage icon                              | 
+        3 Select ES-Espaniol language and check                    | "Sell" field from  Nav fill elemetns must be "Vender"
+          some word translation
