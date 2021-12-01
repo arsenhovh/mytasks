@@ -1,5 +1,8 @@
-module.exports = class Page {
-    open (path) {
-        return browser.url("https://www.amazon.com/");
+const BASE_URL = require('../../support/constants');
+
+class Page {
+    open(path) {
+        return browser.url(BASE_URL);
     }
 }
+module.exports = new Page()
